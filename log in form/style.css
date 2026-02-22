@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+body{
+    background: linear-gradient(135deg, rgba(41, 41, 230, 0.89), rgb(136, 136, 218));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container h2{
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form input{
+    height: 50px;
+    width: 100%;
+    padding-inline: 20px;
+    border: 1px;
+    border-radius: 5px;
+    outline: none;
+}
+
+form input:focus{
+    border: 2px solid gold;
+}
+
+form button{
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid gold;
+    font-weight: 500;
+    font-family: "poppins";
+}
+
+.emptyError{
+    border: 2px solid red;
+}
+
+.emptyError::placeholder{
+    color: red;
+}
+
+.emailerror{
+    font-size: 12px;
+    align-self: flex-start;
+    color: red;
+    border: 1px solid red;
+    background: rgba(107, 5, 5, 0.582);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.passerror{
+    font-size: 12px;
+    align-self: flex-start;
+    color: red;
+    border: 1px solid red;
+    background: rgba(107, 5, 5, 0.582);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.hide{
+    display: none;
+}
+
+.popup{
+    position: absolute;
+    top: -20px;
+    background: white;
+    padding: 5px 15px;
+    scale: 0.1;
+    transition: all .3s ease;
+}
+
+.popup-anime{
+    scale: 1;
+    top: 20px;
+}
