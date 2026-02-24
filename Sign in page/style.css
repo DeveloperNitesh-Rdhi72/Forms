@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    height: 400px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+}
+
+form{
+    width: 80%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.container input{
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+
+.username,.password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+.username i {
+    color: gray;
+}
+
+.password i{
+    color: gray;
+}
+
+.forget{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.forget span{
+    font-size: 13px;
+    color: rgba(0, 0, 255, 0.781);
+    cursor: pointer;
+}
+
+.login{
+    padding: 5px;
+    font-size: 17px;
+    background-color: rgba(0, 0, 255, 0.712);
+    border: none;
+    color: white;
+}
+
+form p{
+    font-size: 12px;
+    color: red;
+    margin-top: -25px;
+}
+
+.getlostback{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.226);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.getlost{
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.getlost h1{
+    color: rgba(0, 0, 255, 0.678);
+}
+
+.getlost .ok{
+    padding: 5px 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 255, 0.692);
+    border: none;
+    border-radius: 10px;
+}
+
+.successfullysignined{
+    position: absolute;
+    top: 10px;
+    border: 1px solid black;
+    padding-inline: 10px;
+    transform: translateY(-400px);
+    scale: 0.1;
+    transition: all .3s ease;
+}
+
+.animate{
+    scale: 1;
+    transform: translateY(0);
+}
+
+.hide{
+    display: none;
+}

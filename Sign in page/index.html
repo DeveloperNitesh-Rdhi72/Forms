@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form>
+            <div class="username">
+                <i class="fa-regular fa-user"></i>
+                <input type="email" placeholder="Enter email" name="email" id="email">
+            </div>
+            <p class="error hide"></p>
+            <div class="password">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Enter password" name="password" id="password">
+            </div>
+            <p class="passerror hide"></p>
+            <div class="forget">
+                <span class="clicked">Forget Password?</span>
+            </div>
+            <button class="login">Log in</button>
+        </form>
+    </div>
+    <div class="getlostback hide">
+        <div class="getlost">
+            <h1>Get Lost</h1>
+            <button class="ok">OK</button>
+        </div>
+    </div>
+    <div class="successfullysignined">
+        Succesfully sign in
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
