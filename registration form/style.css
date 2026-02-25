@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    overflow: hidden;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container{
+    height: max-content;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.usernameSection, .mobileSection, .emailSection, .passwordSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.user, .number, .mail, .pass{
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.register{
+    padding: 5px 15px;
+    font-size: 14px;
+    border: 1px solid gray;
+    font-weight: 500;
+    background-color: white;
+    transition: all .3s ease;
+}
+
+.register:hover{
+    background-color: rgba(0, 0, 255, 0.74);
+    border: 1px solid rgba(0, 0, 255, 0.74);
+    box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.74);
+    color: white;
+    font-weight: 500;
+}
+
+.error{
+    border-bottom: 1px solid red;
+}
+
+.Error{
+    color: red;    
+}
+
+.userError, .emailError, .numberError, .passError{
+    color: red;
+    font-size: 12px;
+    margin-top: -20px;
+    align-self: flex-start;
+    margin-bottom: -25px;
+}
+
+.hide{
+    display: none;
+}
+
+.registermsg{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    border: 1px solid rgb(36, 194, 36);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(36, 194, 36);
+    transform: translateX(500px);
+    transition: all .3s ease;
+}
+
+.registermsg img{
+    height: 25px;
+}
+
+.animate{
+    transform: translateX(0);
+}
